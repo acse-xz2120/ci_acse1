@@ -14,3 +14,12 @@ class TestSimpleFunctions(object):
         '''Test our add function'''
         isum = my_sum(iterable)
         assert isum == expected
+    @pytest.mark.parametrize('number, expected', [
+        ( 2, 2),
+        ( 4, 24)
+    ])
+    def test_factorial(self, number, expected):
+        '''Test factorial function'''
+        result = factorial(number)
+        assert result == expected
+test_simple_functions.py [dos] (16:25
