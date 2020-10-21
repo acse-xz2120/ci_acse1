@@ -22,4 +22,3 @@ class TestSimpleFunctions(object):
         '''Test factorial function'''
         result = factorial(number)
         assert result == expected
-test_simple_functions.py [dos] (16:25
